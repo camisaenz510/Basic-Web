@@ -1,0 +1,58 @@
+
+textarea{
+    width:200px;
+    height: 200px;
+    border: none;
+    background: transparent;
+    outline: none;
+    resize: none;
+    top: 20%;
+}
+
+
+.container1{
+    position: relative;
+    display: inline-block;
+    left: 20%;
+    height: 100%;
+}
+   
+
+.container2{
+    position: relative;
+    left: 25%;
+    display: inline-block;
+   
+}
+
+.container3{
+   
+    display: inline-block;
+    position: relative;
+    left: 26%;
+
+}
+
+.txtarea{
+    position: relative;
+    width:200px;
+    height: 200px;
+}
+
+/**/
+.time{
+    position: relative;
+    display: flex;
+}
+
+.schedule-field{
+    position: relative;
+    top: -10%;
+}
+
+.txt-schedule{
+    display: inline;
+}
+
+/*Imagen perfil*/
+

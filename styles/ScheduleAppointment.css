@@ -1,0 +1,20 @@
+.txt-1{
+    position: relative;
+    left: 25%;
+    top: 35px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.txt-2{
+    position: relative;
+    left: 25%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container1{
+    position: relative;
+    top: 50px;
+}
+

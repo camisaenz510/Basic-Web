@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/7b19f83de5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/NavigationBar.css">
     <link rel="stylesheet" href="/styles/Style.css">
+    <link rel="stylesheet" href="/styles/Menu.css">
+    <link rel="stylesheet" href="/styles/KeepApointment.css">
+
     
     <title>Atender cita</title>
 </head>
@@ -67,6 +70,48 @@
 
         </ul>
     </nav>
+
+    <div class="container">
+        <h1 class="txt-1">Atender una cita</h1>
+
+        <form action="#">
+            
+            <div class="container1">
+                <h2 class="txt-2">Fecha:</h2>
+                <div class="input-field">
+                    <input type="date" id="date" style="width:250px">
+                </div>
+            </div>
+
+            <div class="container1">
+                <h2 class="txt-2">Hora:</h2>
+                <div class="input-field">
+                    <input type="time" id="time" style="width:250px">
+                </div>
+            </div>
+
+            <div class="container1">
+                <h2 class="txt-2">Paciente:</h2>
+                <div class="input-field">
+                    <input type="text" id="pacient-name" style="width:250px">
+                </div>
+            </div>
+           
+            <div class="container1">
+                <h2 class="txt-2">Informacion del caso:</h2>
+                <div class="input-field txtarea">
+                    <textarea class="txtarea" id="bio" rows="4" cols="50"></textarea>
+                </div>
+            </div>
+
+                   
+
+           <div class="container-2">
+            <br><br>   
+            <input type="submit" class="btn-send ola" value="Registrar cita">
+           </div>
+
+        </form>
 
 </body>
 </html>

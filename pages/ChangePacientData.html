@@ -1,18 +1,21 @@
+<!--Pagina hija de UpdatePacientData-->
+<!--UpdatePacientData recibe el usuario al que se le van a hacer cambios y ChangePacientData los realiza -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7b19f83de5.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/7b19f83de5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/NavigationBar.css">
     <link rel="stylesheet" href="/styles/Style.css">
     <link rel="stylesheet" href="/styles/UpdatePacientData.css">
     <link rel="stylesheet" href="/styles/Menu.css">
-    <title>Actualizar informacion</title>
+    <title>Cambiar informacion</title>
 </head>
 <body>
-
+    
     <nav>
         <ul>
             <br>
@@ -71,9 +74,9 @@
 
     <main>
         <div class="container">
-            <h1 class="txt-1">Gestionar la información de los pacientes</h1>
+            <h1 class="txt-1">Cambiar informacion del paciente</h1>
 
-            <form action="/pages/ChangePacientData.html">
+            <form action="#">
                 
                 <div class="container1">
                     <h2 class="txt-2">Nombre del paciente:</h2>
@@ -82,10 +85,50 @@
                     </div>
                 </div>
 
-                <div class="container-2">
-                    <br><br>   
-                    <input type="submit" class="btn-send ola" value="Siguiente">
-                   </div>
+                <div class="container1">
+                    <h2 class="txt-2">Contacto de emergencia:</h2>
+                    <div class="input-field">
+                        <input type="pacient-emergency" id="date" style="width:250px">
+                    </div>
+                </div>
+
+                <div class="container1">
+                    <h2 class="txt-2">Antecedentes medicos:</h2>
+                    <div class="input-field">
+                        <input type="pacient-name" id="date" style="width:250px">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="tabla-doctor">
+                        <table class="content-table">
+                            <thead>
+                              <tr>
+                                <th>Nombre</th>
+                                <th>Especialidad</th>
+                                <th>Localidad</th>
+                                <th>Dia</th>
+                                <th>Hora</th>
+                                <th>Agendar cita</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <td>Doctor 1</td>
+                                <td>Neurologo</td>
+                                <td>Heredia</td>
+                                <td>Lunes</td>
+                                <th>3:00pm</th>
+                                <th><a class="horario-agendar" href="Schedule.html">Agendar</a></th>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                     </div>
+
+                </div>
+
             </form>
 
         </div>

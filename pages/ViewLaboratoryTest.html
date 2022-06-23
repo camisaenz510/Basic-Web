@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/styles/Style.css">
     <link rel="stylesheet" href="/styles/Menu.css">
     <link rel="stylesheet" href="/styles/LaboratoryTest.css">
+    <link rel="stylesheet" href="/styles/Table.css">
     
-    <title>Examenes laboratorio</title>
+    <title>Historial Medico</title>
 </head>
 <body>
-    
+
     <nav>
         <ul>
             <br>
@@ -69,28 +70,71 @@
 
         </ul>
     </nav>
+    
 
     <main>
         <div class="container">
-            <h1 class="txt-1">Gestion de examenes de laboratorio</h1>
+            <h1 class="txt-1">Historial de examenes de laboratorio</h1>
 
-            <form action="/pages/ViewLaboratoryTest.html">
-                
+            <form action="#">
+
                 <div class="container1">
-                    <h2 class="txt-2">Nombre del paciente:</h2>
-                    <div class="input-field">
-                        <input type="pacient-name" id="date" style="width:250px">
-                    </div>
+                    <div class="tabla-info">
+                        <h2 class="txt-2 txt-table">Historial: </h2>
+                        <table class="content-table">
+                            <thead>
+                              <tr>
+                                <th>Paciente</th>
+                                <th>Fecha consulta</th>
+                                <th>Hora consulta</th>
+                                <th>Etiquetas</th>
+                                <th>Pdf resultados</th>
+                              </tr>
+                            </thead>
+                
+                            <tbody>
+                              <tr>
+                                <td>Paciente 1</td>
+                                <td>6/22/2022</td>
+                                <td>7:30pm</td>
+                                <td>Dolor estomacal, urgente</td>
+                                <th>Espacio para el pdf</th>
+                                
+                              </tr>
+
+                              <tr>
+                                <td>Paciente 2</td>
+                                <td>6/22/2022</td>
+                                <td>7:30pm</td>
+                                <td>Dolor estomacal, urgente</td>
+                                <th>Espacio para el pdf</th>
+                                
+                              </tr>
+
+                              <tr>
+                                <td>Paciente 3</td>
+                                <td>6/22/2022</td>
+                                <td>7:30pm</td>
+                                <td>Dolor estomacal, urgente</td>
+                                <th>Espacio para el pdf</th>
+                                
+                              </tr>
+                              
+                            </tbody>
+
+                          </table>
+                     </div>
+                </div>
+                
+                <div class="container-2"><br><br><br><br><br>
+                    <input type="submit" class="btn-send" value="Actualizar">
                 </div>
 
-                <div class="container-2">
-                    <br><br>   
-                    <input type="submit" class="btn-send" value="Siguiente">
-                   </div>
             </form>
 
         </div>
     </main>
+
 
 </body>
 </html>

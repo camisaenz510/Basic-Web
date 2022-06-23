@@ -1,22 +1,20 @@
-<!--Pagina hija de UpdatePacientData-->
-<!--UpdatePacientData recibe el usuario al que se le van a hacer cambios y ChangePacientData los realiza -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://kit.fontawesome.com/7b19f83de5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/Style.css">
-    <link rel="stylesheet" href="/styles/UpdatePacientData.css">
+    <script src="https://kit.fontawesome.com/7b19f83de5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/NavigationBar.css">
+    <link rel="stylesheet" href="/styles/Style.css">
     <link rel="stylesheet" href="/styles/Menu.css">
+    <link rel="stylesheet" href="/styles/AppointmentHistory.css">
     <link rel="stylesheet" href="/styles/Table.css">
-    <title>Cambiar informacion</title>
+    
+    <title>Historial Medico</title>
 </head>
 <body>
-    
+
     <nav>
         <ul>
             <br>
@@ -72,33 +70,13 @@
 
         </ul>
     </nav>
+    
 
     <main>
         <div class="container">
-            <h1 class="txt-1">Cambiar informacion del paciente</h1>
+            <h1 class="txt-1">Historial de citas por paciente</h1>
 
             <form action="#">
-                
-                <div class="container1">
-                    <h2 class="txt-2">Nombre del paciente:</h2>
-                    <div class="input-field">
-                        <input type="pacient-name" id="date" style="width:250px">
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <h2 class="txt-2">Contacto de emergencia:</h2>
-                    <div class="input-field">
-                        <input type="pacient-emergency" id="date" style="width:250px">
-                    </div>
-                </div>
-
-                <div class="container1">
-                    <h2 class="txt-2">Antecedentes medicos:</h2>
-                    <div class="input-field">
-                        <input type="pacient-name" id="date" style="width:250px">
-                    </div>
-                </div>
 
                 <div class="container1">
                     <div class="tabla-info">
@@ -112,6 +90,7 @@
                                 <th>Diagnostico</th>
                                 <th>Prescripcion Medicamentos</th>
                                 <th>Estado</th>
+                                <th>Atender cita</th>
                               </tr>
                             </thead>
                 
@@ -122,7 +101,8 @@
                                 <td>Dolor estomacal</td>
                                 <td>Intoxicacion por alimentos fermentados</td>
                                 <th>Acetaminofen</th>
-                                <th>Completada</th>
+                                <th>Pendiente</th>
+                                <td><a class="a-change-info" href="/pages/KeepAppointment.html" width="10px" >Atender cita</a></td>
                               </tr>
 
                               <tr>
@@ -132,8 +112,9 @@
                                 <td>Intoxicacion por alimentos fermentados</td>
                                 <th>Acetaminofen</th>
                                 <th>Completada</th>
+                                <th></th>
                               </tr>
-
+                              
                             </tbody>
 
                           </table>
@@ -147,12 +128,8 @@
             </form>
 
         </div>
-
-
-
-
-
     </main>
-    
+
+
 </body>
 </html>

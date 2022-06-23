@@ -1,3 +1,14 @@
+textarea{
+    resize: none;    
+    background-color: transparent;
+    width: 251px; 
+    height: 240px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
 .txt-1{
     position: relative;
     left: 25%;
@@ -19,5 +30,6 @@
 }
 
 .txtarea{
-  
+    height: 200px;
+    resize: none;
 }

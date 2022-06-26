@@ -1,58 +1,143 @@
 
 textarea{
-    width:200px;
-    height: 200px;
-    border: none;
-    background: transparent;
-    outline: none;
-    resize: none;
-    top: 20%;
+    resize: none;    
+    background-color: transparent;
+    width: 251px; 
+    height: 300px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+
 }
 
-
-.container1{
+.txt-1{
     position: relative;
-    display: inline-block;
-    left: 20%;
-    height: 100%;
+    left: 14%;
+    top: 70px;
+    font-weight: 600;
+    font-size: 25px;
 }
-   
 
-.container2{
+.txt-2{
     position: relative;
     left: 25%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container1{                    /*foto*/
+    position: relative;
     display: inline-block;
-   
+    left: 22%;
+    height: 80%;
+    top: 170px;
+}
+
+.container2{                    /*bio*/
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    height: 100%;
+    top: 370px;
 }
 
 .container3{
-   
+    position: relative;
     display: inline-block;
+    left: 15%;
+    height: 100%;
+    top: 127px;
+}
+
+.container4{
     position: relative;
-    left: 26%;
+    display: inline-block;
+    left: 1%;
+    top: 270px;
+}
+
+.container4-2{
+    position: relative;
+    display: inline-block;
+    left: 1%;
+    top: 270px;
 
 }
 
-.txtarea{
+.container5{
     position: relative;
-    width:200px;
+    display: inline-block;
+    left: -17%;
+    top: 400px;
+}
+
+.container6{
+    position: relative;
+    display: inline-block;
+    left: -33%;
+    top: 520px;
+}
+
+.container7{
+    position: relative;
+    display: inline-block;
+    left: -30%;
+    top: 127px;
+}
+
+.container8{
+    position: relative;
+    display: inline-block;
+    left: 51%;
+    top: -8px; 
+}
+
+.btn-profile{
+    position: relative;
+    top: 200px;
+    left: 76%;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 48px;
+    background-color: #34bee5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: all 0.5s;
+}
+
+.btn-profile:hover{
+    background-color: #34bee5;
+}
+
+.txtarea-field{
+    position: relative;
+    left: 25%;
+    max-width: 280px;
+    width: 100%;
     height: 200px;
-}
-
-/**/
-.time{
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.9rem;
     position: relative;
-    display: flex;
 }
 
-.schedule-field{
-    position: relative;
-    top: -10%;
+.txtarea-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-.txt-schedule{
-    display: inline;
+.txtarea-field:placeholder-shown{
+    color:#aaa;
+    font-weight: 500;
 }
-
-/*Imagen perfil*/
-

@@ -5,89 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar datos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/styles/Style.css">
     <link rel="stylesheet" href="/styles/CompleteProfile.css">
     <link rel="stylesheet" href="/styles/Menu.css">
-
-    <script type="text/javascript" src="/scripts/CompleteProfile.js"></script>
+    <link rel="stylesheet" href="/styles/ProfileImage.css">
 </head>
+
 <body>
     
-    <div class="container">
+    <body>
 
-       <form action="/pages/Schedule.html">
-        <div>
-            <br><br><br><br><br>
+        <div class="container">
+        
             <h1 class="txt-1">Ingresar informacion personal</h1>
-            <br><br>
-           </div>
-
-           <div class="container1">
-               
-                <h2 class="txt-2">Biografia</h2>
-                <div class="input-field">
-                    <textarea class="txtarea" id="bio" rows="4" cols="50"></textarea>
+        
+            <div class="container1">
+                <div class="profile-pic-div">
+                    <img src="/pictures/profileicon.jpg" id="photo">
+                    <input type="file" id="file">
+                    <label for="file" id="uploadBtn">Choose Photo</label>
+                  </div>
+            </div>
+        
+            <div class="container2">
+                <h2 class="txt-2 ">Biografia</h2>
+                <div class="txtarea-field">
+                    <textarea class="txtarea" id="bio" rows="" cols="100"></textarea>
                 </div>
            </div>
-           
-           <div class="container2">
-
+        
+           <div class="container3">
                 <h2 class="txt-2">Nombre completo</h2>
                 <div class="input-field">
                     <input type="text" id="name" style="width:250px">
                 </div>
+           </div>
 
+           <div class="container4">
                 <h2 class="txt-2">Horario semanal</h2>
-                <h3 class="txt-3 txt-schedule">Entrada:ㅤㅤㅤㅤㅤㅤㅤ</h3>
-                <h3 class="txt-3 txt-schedule txt-schedule2">Salida:</h3>
-                <div class="time">
-                    
-                    <div class="input-field schedule-field entrada">
-                       <input type="time" id="entrada" style="width:110px">
-                    </div>
+                <h3 class="txt-3 txt-schedule">Entrada:</h3>
+                <div class="input-field schedule-field entrada">
+                    <input type="time" id="entrada" style="width:110px">
+                 </div>
+           </div>
 
-                   
-                    <div class="input-field schedule-field salida">
-                        <input type="time" id="salida" style="width:110px">
-                    </div>
-                   
+           <div class="container4-2">
+                <h3 class="txt-3">Salida:</h3>
+                <div class="input-field schedule-field salida">
+                    <input type="time" id="salida" style="width:110px">
                 </div>
+           </div>
 
+           <div class="container5">
                 <h2 class="txt-2">Frecuencia citas</h2>
                 <div class="input-field">
                     <input type="text" id="frecuency" style="width:250px">
                 </div>
-
            </div>
 
-           <div class="container3">
-
+           <div class="container6">
                 <h2 class="txt-2">Localidad atención</h2>
                 <div class="input-field">
                     <input type="text" id="location" style="width:250px">
                 </div>
-            
-                <h2 class="txt-2">Especialidad</h2>
-                <h3 class="txt-3">ㅤㅤㅤㅤㅤㅤㅤ</h3>
+           </div>
+
+           <div class="container7">
+            <h2 class="txt-2">Especialidad</h2>
                 <div class="input-field">
                     <input type="text" id="specialization" style="width:250px">
                 </div>
-
-                <h2 class="txt-2">Costo consulta</h2>
-                <div class="input-field">
-                    <input type="text" id="cost" style="width:250px">
-                </div>
            </div>
 
-            <div>
-                <button class="btn-send">Enviar</button>
-            </div>
-            
+           <div class="container8">
+                <h2 class="txt-2">Costo consulta</h2>
+                    <div class="input-field">
+                        <input type="text" id="cost" style="width:250px">
+                    </div>
+           </div>
+
+           <div><button class="btn-profile">Enviar</button></div>
+
         </div>
-       </form>
-
-    </div>
-
-</body>
+        
+        <script src="/scripts/CompleteProfile.js"></script>
+        
+        </body>
 </html>
